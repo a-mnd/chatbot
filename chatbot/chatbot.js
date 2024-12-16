@@ -1,4 +1,3 @@
-//Seleciona os elementos HTML relevantes usando seletores de classe 
 const enviarMsg = document.querySelector(".chat-entrada span"); //botao de envio de mensagem
 const areaTexto = document.querySelector(".chat-entrada textarea"); //Área de texto onde o usuário digita a mensagem
 const chatBox = document.querySelector(".chatbox"); //Container onde as mensagens são exibidas
@@ -6,7 +5,7 @@ const abrfecChat = document.querySelector(".chatbot-toggler");
 const botaofechamedia = document.querySelector(".botaofecha");
 
 let msgUsuario; //varaivel para armazenar a ensagem do usuario
-const API_KEY = "sk-proj-gbf4zejDf8WYvFkIUL3aT3BlbkFJBtRq2pK45H3xVME4vNwV"; //Chave de API da OpenAI, insira sua chave aqui, cada um com a sua
+const API_KEY = "chave-AI"; //Chave de API da OpenAI, insira sua chave aqui, cada um com a sua
 const tamanhoInput = areaTexto.scrollHeight;
 
 // Função para criar e retornar um elemento <li> para exibir mensagens no chat
@@ -33,8 +32,8 @@ const gerarResposta = (chatEnviadoli) => {
             "Authorization": `Bearer ${API_KEY}` // Usa a chave de API para autorização
         },
         body: JSON.stringify({
-            model: "gpt-3.5-turbo", // Modelo de linguagem a ser usado para gerar respostas
-            messages: [{ role: "user", content: msgUsuario }]  // Mensagem do usuário a ser enviada para a OpenAI
+            model: "gpt-3.5-turbo", 
+            messages: [{ role: "user", content: msgUsuario }]  
         })
     }
 
