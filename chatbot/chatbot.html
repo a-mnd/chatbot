@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body> <!--class="show-chatbot"-->
+    <button class="chatbot-toggler">
+        <span>img</span>
+        <span>fechar</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="botaofecha">fechar</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat enviado">
+                <span>img</span>
+                <p>Olá, tudo bem? <br> Como posso te ajudar?</p>
+            </li>
+            <!--<li class="chat recebido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </li>-->
+        </ul>
+        <div class="chat-entrada">
+            <textarea placeholder="Escreva sua mensagem..." required></textarea>
+            <span id="botao-enviar">Enviar!</span>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
